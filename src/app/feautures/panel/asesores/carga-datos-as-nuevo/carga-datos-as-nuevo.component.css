@@ -1,0 +1,132 @@
+.proy_css_main
+{
+    padding: 10px 10px 10px 10px;
+    font-family: 'ArialNarrow';
+    color: #666666;
+    font-size: 16px;
+}
+
+.proy_css_box
+{
+    padding: 5px 5px 5px 5px;    
+}
+
+.mat-card
+{
+    box-shadow: none !important;
+    border: 1px solid #EEEEEE;
+}
+
+.mat-card-header-text 
+{
+    margin: 0 !important;
+}
+
+.mat-card-title
+{
+    font-family: 'ArialNarrow' !important;
+    color: #999999 !important;
+    font-size: 16px !important;
+}
+
+.mat-table
+{
+    width: 100%;
+    border-top: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+}
+
+.mat-table thead tr th
+{
+    padding: 10px 10px 10px 10px !important;
+    background: #2d3f68;
+    color: #FFFFFF;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.mat-table tbody tr td
+{
+    padding: 10px 10px 10px 10px !important;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.mat-table tbody tr:hover
+{
+    background-color: #EEEEEE;
+    cursor: pointer;
+}
+
+.proy_css_tab_detalle .mat-form-field-wrapper
+{
+    padding-bottom: 0px !important;
+}
+
+.proy_css_btnabajo
+{
+    width: 105px;
+}
+
+.proy_css_btnarriba
+{
+    width: 115px;
+}
+
+.proy_css_btnbuscar
+{
+    height: 52px; 
+    margin-top: 3px;
+    width: 100%;
+}
+
+.proy_css_lista
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.proy_css_lista td
+{
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.proy_css_lista thead
+{
+    border-top: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+}
+
+.proy_css_lista tbody
+{
+    border: 1px solid #DDDDDD;
+    border-collapse: separate;    
+}
+
+.proy_css_lista thead tr td
+{
+    padding: 10px 10px 10px 10px;
+    background: #2d3f68;
+    color: #FFFFFF;
+}
+
+.proy_css_lista tbody tr td
+{
+    padding: 0px 10px 0px 10px;
+}
+
+.proy_css_lista tfoot tr td
+{
+    padding: 10px 10px 10px 10px;
+}
+
+.proy_css_lista tbody tr:hover
+{    
+    cursor: pointer;
+}
+
+.proy_css_text_box{
+    text-align: left;
+    padding-top: 20px;
+}

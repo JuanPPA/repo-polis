@@ -1,0 +1,228 @@
+body{
+    font-family: 'Jost', sans-serif;
+
+}
+.dash_css_background_footer
+{
+    background: url(/assets/img/BackgroundFooter.jpg);    
+    font-family: 'Jost', sans-serif;
+}
+
+.dash_css_layout_wrapper,
+.dash_css_flex_wrapper
+{
+    height: 100%;
+    font-family: 'Jost', sans-serif;
+}
+
+mat-sidenav-container, 
+mat-sidenav-content, 
+mat-sidenav 
+{
+    height: 100%;
+    font-family: 'Jost', sans-serif;
+}
+
+mat-sidenav 
+{
+    width: 320px;
+    font-family: 'Jost', sans-serif;
+}
+
+.mat-drawer-container
+{
+    background: transparent;
+}
+
+.mat-expansion-panel-header
+{
+    padding-left: 17px !important;
+    height: 32px !important;
+}
+
+.mat-expansion-panel
+{
+    box-shadow: none !important;
+}
+
+main 
+{
+    padding: 0px;    
+    margin-top: 68px;
+    font-family: 'Jost', sans-serif;
+
+}
+
+.dash_css_borde
+{
+    border: 1px solid red;
+}
+
+.dash_css_back_menu
+{
+    background-color: #1b8f5f;
+    position: fixed;
+    z-index: 2;
+    height: 60px !important;       
+    -webkit-box-shadow: 0px 2px 3px 0px #CCCCCC;
+    -moz-box-shadow: 0px 2px 3px 0px #CCCCCC;
+    box-shadow: 0px 2px 3px 0px #CCCCCC;
+    color: #FFFFFF;
+    font-family: 'Jost', sans-serif;
+}
+
+.dash_css_text_menu
+{
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    color: #333333;    
+}
+
+.dash_css_img_user_bar
+{
+    width: 40%;
+    height: 40%;
+    /* border-radius: 50%;
+    margin-right: 15px;     */
+}
+
+.dash_css_text_user_bar
+{
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.dash_css_img_user_nav
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #FFFFFF;
+}
+
+.dash_css_text_user_nav
+{
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    color: #ffffff;    
+}
+
+.dash_css_footer_row
+{    
+    background-color: #333333;
+}
+
+.dash_css_footer_col
+{    
+    padding: 20px 20px 20px 20px;
+    color: #FFFFFF;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;    
+}
+
+.dash_css_footer_col .mat-list-item
+{
+    height: 30px !important;
+}
+
+.dash_css_footer_col .mat-list-item-content
+{
+    padding: 0 0px !important;
+    color: white !important;
+    font-size: 16px !important;
+    font-family: 'Jost', sans-serif !important;
+}
+
+.dash_css_icon_blue_svg 
+{
+    width: 32px !important;
+    height: 32px !important;
+    color: #333333 !important;    
+}
+
+.dash_css_icon_white_svg
+{
+    width: 32px !important;
+    height: 32px !important;
+    color: #FFFFFF !important;    
+}
+
+.dash_css_btn_actived
+{
+    color: #FF0000;
+}
+
+.dash_css_btn_normal
+{
+    color: #333333;
+}
+
+.dash_css_row_opciones_menu
+{        
+    height: 70px; 
+    border-bottom: 3px solid #FF0000;
+}
+
+.dash_css_header_panel_expand
+{
+    width: 100%;
+}
+
+.dash_css_header_panel_expand .icono
+{
+    vertical-align:middle !important; 
+    text-align: left !important; 
+    width: 0 !important;
+}
+
+.dash_css_header_panel_expand .titulo
+{
+    vertical-align:middle !important; 
+    text-align: left !important; 
+    font-family: 'Jost', sans-serif !important;
+    font-size: 14px !important; 
+    padding-left: 3px !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline 
+{
+    color: #333333;
+}
+
+.mat-datepicker-toggle .mat-icon-button
+{
+    top: 8px !important;
+}
+
+.glob_css_snackbar_ok
+{
+    background:#04B404;
+    color: #FFFFFF;
+}
+
+.glob_css_snackbar_warning
+{
+    background:#FF8000;
+    color: #FFFFFF;
+}
+
+.glob_css_snackbar_error
+{
+    background:#FF0000;
+    color: #FFFFFF;
+}
+
+@media (max-width: 959px) 
+{
+    .dash_css_back_menu
+    {        
+        height: 56px !important;
+    }
+
+    .dash_css_row_opciones_menu
+    {        
+        height: 56px !important;
+        border-bottom: none;
+    }    
+}

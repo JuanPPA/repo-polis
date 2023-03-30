@@ -1,0 +1,77 @@
+<div class="container pt-5">
+    <div layout="row">
+        <div fxFlex="100">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center h3">LISTADO DE VISITANTES</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row pt-3">
+        <div class="col-12 col-md-3">
+            <span>PROYECTO: </span>
+            <div class="input-group mb-3">
+                <div class="col-12">
+                    <select class="form-select" aria-label="Default select example" [(ngModel)]="buscar">
+                        <option selected>Elige...</option>
+                        <option value="1">SAKURA</option>
+                        <option value="2">COMARCA</option>
+                        <option value="3">BUGANVILLA</option>
+                        <option value="4">PRANA LAGOONS</option>
+                        <option value="5">AYNISUYU</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3">
+            <span>FECHA DE VISITA Y HORA: </span>
+            <div class="input-group mb-3">
+                <input type="datetime-local" class="form-control" placeholder="Datos del Cliente" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+        </div>
+        <div class="col-12 col-md-1 pt-4">
+            <button class="btn btn-success">Buscar</button>
+        </div>
+        <div class="col-12 col-md-1 pt-4">
+            <button class="btn btn-success">Guardar</button>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table">
+            <thead style="background-color: #1b8f5f; color: white;">
+                <tr>
+                    <th class="text-center">Asistió</th>
+                    <th class="text-center">Documento</th>
+                    <th class="text-center">Datos</th>
+                    <th class="text-center">Fecha de Visita</th>
+                    <th class="text-center">Dirección</th>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let dato of datos">
+                    <tr>
+                        <td class="text-center">
+
+                            <div class="form-check">
+                                <input *ngIf="dato.asistio == 'true'" class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <input *ngIf="dato.asistio == 'false'" class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+
+                            </div>
+                        </td>
+                        <td>{{dato.documento}}</td>
+                        <td>{{dato.datos}}</td>
+                        <td>{{dato.fecha}}</td>
+                        <td>{{dato.direccion}}</td>
+                    </tr>
+                </ng-container>
+
+
+            </tbody>
+        </table>
+    </div>
+
+</div>

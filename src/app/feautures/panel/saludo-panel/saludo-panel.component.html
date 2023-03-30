@@ -1,0 +1,93 @@
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="https://sistema.ciudapolis.com/wp-content/uploads/2021/05/ciudapolis-logo-2-1.png"
+                    class="img-fluid" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="h2"> <b>Bienvenido Usuario 1 </b></p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12 col-md-3">
+                <span>MES </span>
+
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Elige...</option>
+                    <option value="1">ENERO</option>
+                    <option value="2">FEBRERO</option>
+                    <option value="3">MARZO</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5 text-center" style="align-content: center;">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-5">
+                <div class="">
+                    <div class="">
+                        <div class="">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p class=""><b>RESULTADOS</b></p>
+                                    <div class="d-flex justify-content-center" >
+                                        <ngx-charts-pie-grid [view]="view4" [scheme]="colorScheme4" [results]="single4"
+                                            (select)="onSelect4($event)">
+                                        </ngx-charts-pie-grid>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-7">
+                <div class="">
+                    <div class="">
+                        <div class="">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p class=""><b>RESULTADOS</b></p>
+                                    <div class="d-flex justify-content-center" >
+                                        <ngx-charts-bar-vertical-2d [view]="view" [scheme]="colorScheme"
+                                            [results]="multi" [gradient]="gradient" [xAxis]="showXAxis"
+                                            [yAxis]="showYAxis" [showXAxisLabel]="showXAxisLabel"
+                                            [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+                                            
+                                            (select)="onSelect($event)" (activate)="onActivate($event)"
+                                            (deactivate)="onDeactivate($event)">
+                                        </ngx-charts-bar-vertical-2d>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-3" >
+            <!-- <div class="col-12 col-md-6">
+                <ngx-charts-bar-horizontal-2d [view]="view3" [scheme]="colorScheme3" [schemeType]="schemeType"
+                    [results]="multi3" [gradient]="gradient3" [xAxis]="showXAxis3" [yAxis]="showYAxis3"
+                    [legend]="showLegend3" [legendPosition]="legendPosition3" [showXAxisLabel]="showXAxisLabel3"
+                    [showYAxisLabel]="showYAxisLabel3" [xAxisLabel]="xAxisLabel3" [yAxisLabel]="yAxisLabel3"
+                    (select)="onSelect3($event)" (activate)="onActivate3($event)" (deactivate)="onDeactivate3($event)">
+                </ngx-charts-bar-horizontal-2d>
+            </div> -->
+            <div class="col-12 col-md-12" style="align-content: center;">
+                <ngx-charts-pie-chart [view]="view1" [scheme]="colorScheme1" [results]="single" [gradient]="gradient1"
+                    [legend]="showLegend1" [labels]="showLabels" [doughnut]="isDoughnut" (select)="onSelect($event)"
+                    (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+                </ngx-charts-pie-chart>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+</body>

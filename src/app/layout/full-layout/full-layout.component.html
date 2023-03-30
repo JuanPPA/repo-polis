@@ -1,0 +1,124 @@
+<body>
+    
+    <!-- <app-header></app-header>
+<router-outlet></router-outlet>
+<app-footer></app-footer> -->
+<div fxLayout="row" fxLayoutAlign="center center" class="dash_css_layout_wrapper">
+    <div fxFlex="100%" class="dash_css_flex_wrapper">
+      <mat-sidenav-container>
+        <mat-sidenav #sidenav role="navigation">
+          <div fxLayout="column" style="padding: 20px 20px 20px 20px; background-color: #1b8f5f; text-align: center;">
+              <div fxFlex="1 1 100%" fxLayoutAlign="center center">                
+                <img [src]="'https://ciudapolis.com/img/logo-w.svg'"  class="dash_css_img_user_nav">
+              </div>
+              <div fxFlex="1 1 100%" fxLayoutAlign="center center" style="padding-top: 10px">
+            <!-- ----------- SE COMENTA POR ORDEN PORQUE NO SE NECESITARA POR EL MOMENTO --------------- -->
+                <!-- <span class="dash_css_text_user_nav">{{dash_var_Usuario.nombres}}</span> -->
+            <!-- -------------------------- -->
+
+                <span class="dash_css_text_user_nav">Usuario 1</span>
+
+              </div>
+          </div>
+          <div fxLayout="column" style="padding-top: 10px;" fxLayoutGap="10px">
+            <div fxFlex="1 1 100%" fxLayoutAlign="flex-center">
+                <button mat-button class="dash_css_text_menu" style="width: 100%; text-align: center"><mat-icon>group</mat-icon> Asesores</button>
+                <!-- <hr> -->
+            </div>
+            <!-- <div fxFlex="1 1 100%" fxLayoutAlign="flex-start">
+              <button mat-button class="dash_css_text_menu" style="width: 100%; text-align: left" (click)="sidenav.toggle(); dash_fun_GoComponent('1')"><mat-icon>group</mat-icon> Carga de datos / Interes del cliente</button>
+              
+            </div> -->
+            <div fxFlex="1 1 100%" fxLayoutAlign="flex-start">
+              <button mat-button class="dash_css_text_menu" style="width: 100%; text-align: left" (click)="sidenav.toggle(); dash_fun_GoComponent('2')"><mat-icon>badge</mat-icon> Clientes</button>
+            </div>          
+            <div fxFlex="1 1 100%" fxLayoutAlign="flex-start" >
+              <button mat-button class="dash_css_text_menu" style="width: 100%; text-align: left" (click)="sidenav.toggle(); dash_fun_GoComponent('5')"><mat-icon>follow_the_signs</mat-icon> Listado Zoom</button>
+            </div> 
+            <div fxFlex="1 1 100%" fxLayoutAlign="flex-start" >
+              <button mat-button class="dash_css_text_menu" style="width: 100%; text-align: left" (click)="sidenav.toggle(); dash_fun_GoComponent('8')"><mat-icon>follow_the_signs</mat-icon>Listado Visitas</button>
+            </div> 
+            <!-- <div fxFlex="1 1 100%" fxLayoutAlign="flex-start">
+              <button mat-button class="dash_css_text_menu" style="width: 100%; text-align: left" (click)="sidenav.toggle(); dash_fun_GoComponent('11')"><mat-icon>follow_the_signs</mat-icon> Separación</button>
+            </div>  -->
+            <div fxFlex="1 1 100%" fxLayoutAlign="flex-start">
+                <!-- <hr> -->
+                <button mat-button class="dash_css_text_menu" style="width: 100%; text-align: center"><mat-icon>group</mat-icon> Plataforma de Gestión</button>
+              </div>
+              <div fxFlex="1 1 100%" fxLayoutAlign="flex-start" >
+                <button mat-button class="dash_css_text_menu" style="width: 100%; text-align: left" (click)="sidenav.toggle(); dash_fun_GoComponent('6')"><mat-icon>follow_the_signs</mat-icon> Reportes</button>
+              </div> 
+              <div fxFlex="1 1 100%" fxLayoutAlign="flex-start" >
+                <button mat-button class="dash_css_text_menu" style="width: 100%; text-align: left" (click)="sidenav.toggle(); dash_fun_GoComponent('7')"><mat-icon>follow_the_signs</mat-icon> Dashboard Separaciones</button>
+              </div> 
+            <!-- <div fxFlex="1 1 100%" fxLayoutAlign="flex-start">
+              <mat-accordion>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>                          
+                          <table class="dash_css_header_panel_expand" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td class="icono">
+                                <mat-icon>settings</mat-icon>
+                              </td>
+                              <td class="titulo">
+                                Configurador
+                              </td>
+                            </tr>
+                          </table>                          
+                        </mat-panel-title>                        
+                    </mat-expansion-panel-header>
+                    <div fxLayout="column" style="padding-top: 10px;" fxLayoutGap="5px">
+                      <div fxFlex="1 1 100%" fxLayoutAlign="flex-start">
+                        <button mat-button class="dash_css_text_menu" style="width: 100%; text-align: left" (click)="sidenav.toggle(); dash_fun_GoComponent('6')"><mat-icon>people_alt</mat-icon> Mantenedor de Usuarios</button>  
+                      </div>
+                      <div fxFlex="1 1 100%" fxLayoutAlign="flex-start">
+                        <button mat-button class="dash_css_text_menu" style="width: 100%; text-align: left" (click)="sidenav.toggle(); dash_fun_GoComponent('7')"><mat-icon>account_box</mat-icon> Mantenedor de Perfiles</button>
+                      </div>
+                      <div fxFlex="1 1 100%" fxLayoutAlign="flex-start">
+                        <button mat-button class="dash_css_text_menu" style="width: 100%; text-align: left" (click)="sidenav.toggle(); dash_fun_GoComponent('8')"><mat-icon>mode_fan_off</mat-icon> Mantenedor de Zonas</button>
+                      </div>
+                      <div fxFlex="1 1 100%" fxLayoutAlign="flex-start">
+                        <button mat-button class="dash_css_text_menu" style="width: 100%; text-align: left" (click)="sidenav.toggle(); dash_fun_GoComponent('9')"><mat-icon>villa</mat-icon> Mantenedor de Ubigeos</button>
+                      </div>
+                      <div fxFlex="1 1 100%" fxLayoutAlign="flex-start">
+                        <button mat-button class="dash_css_text_menu" style="width: 100%; text-align: left" (click)="sidenav.toggle(); dash_fun_GoComponent('10')"><mat-icon>corporate_fare</mat-icon> Mantenedor de Empresas Supervisoras</button>
+                      </div>
+                    </div>                    
+                </mat-expansion-panel>
+              </mat-accordion>
+            </div>             -->
+            <div fxFlex="1 1 100%" fxLayoutAlign="flex-start">
+              <mat-divider class="dash_css_text_menu" style="width: 100%; text-align: left"></mat-divider>
+            </div>
+            <div fxFlex="1 1 100%" fxLayoutAlign="flex-start">
+              <button mat-button class="dash_css_text_menu" style="width: 100%; text-align: left" (click) = "dash_fun_Logout()"><mat-icon>power_settings_new</mat-icon> Cerrar Sesion</button>
+            </div>
+          </div>
+        </mat-sidenav>
+        <mat-sidenav-content>
+          <header>
+            <mat-toolbar fxLayout="row" class="dash_css_back_menu">
+              <div fxFlex="0 0 50px" fxLayoutAlign="flex-start">
+                <img [src]="'https://ciudapolis.com/img/logo-w.svg'" class="dash_css_img_user_bar" height="50px">
+
+                
+                <button mat-icon-button (click)="sidenav.toggle()"><mat-icon aria-label="Menu">menu</mat-icon></button>
+                <!-- <div><table><tr><td style="vertical-align:middle; height: 100%; font-size: 16px;">aax</td></tr></table></div> -->
+              </div>
+              <div fxFlex="1 1 auto" fxLayoutAlign="flex-end" style="padding-left: 20px;">
+                <!-- <img [src]="'assets/img/UserWhite.png'" class="dash_css_img_user_bar"> -->
+                <!-- <button mat-button class="dash_css_text_menu" style="color: #FFFFFF;">AGENTE 1</button> -->
+                <!-- <button mat-icon-button (click) = "dash_fun_Logout()"><mat-icon>power_settings_new</mat-icon></button> -->
+              </div>
+            </mat-toolbar>
+          </header>
+          <main style="min-height: 70%">
+            <router-outlet></router-outlet>
+          </main>          
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+    </div>
+</div>
+
+</body>
